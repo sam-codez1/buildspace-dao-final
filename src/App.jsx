@@ -16,14 +16,14 @@ const App = () => {
   const network = useNetwork();
   console.log('👋 Address:', address);
   // Initialize our Edition Drop contract
-  const editionDropAddress = 'INSERT_EDITION_DROP_ADDRESS';
+  const editionDropAddress = '0x4088a76755ed95fbF5E4A98B6a5F6096ba531F8B';
   const { contract: editionDrop } = useContract(
     editionDropAddress,
     'edition-drop',
   );
   // Initialize our token contract
   const { contract: token } = useContract(
-    'INSERT_TOKEN_ADDRESS',
+    '0x4088a76755ed95fbF5E4A98B6a5F6096ba531F8B',
     'token',
   );
   const { contract: vote } = useContract(
@@ -108,8 +108,7 @@ const App = () => {
     // with tokenId 0.
     const getAllAddresses = async () => {
       try {
-        const memberAddresses =
-          await editionDrop?.history.getAllClaimerAddresses(0);
+        const memberAddresses = await editionDrop?.history.getAllClaimerAddresses(0);
         setMemberAddresses(memberAddresses);
         console.log('🚀 Members addresses', memberAddresses);
       } catch (error) {
@@ -184,8 +183,8 @@ const App = () => {
   if (hasClaimedNFT) {
     return (
       <div className="member-page">
-        <h1>🍪DAO Member Page</h1>
-        <p>Congratulations on being a member</p>
+        <h1>FeastDAO Member Page</h1>
+        <p>FEEDING TIME</p>
         <div>
           <div>
             <h2>Member List</h2>
