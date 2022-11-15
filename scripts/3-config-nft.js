@@ -6,8 +6,8 @@ import { readFileSync } from "fs";
     const editionDrop = await sdk.getContract("INSERT_EDITION_DROP_ADDRESS", "edition-drop");
     await editionDrop.createBatch([
       {
-        name: "Leaf Village Headband",
-        description: "This NFT will give you access to NarutoDAO!",
+        name: "Grab a Plate",
+        description: "Grab a plate to get access to FeastDAO!",
         image: readFileSync("scripts/assets/headband.png"),
       },
     ]);

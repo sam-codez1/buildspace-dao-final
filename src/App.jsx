@@ -171,7 +171,7 @@ const App = () => {
   if (!address) {
     return (
       <div className="landing">
-        <h1>Welcome to NarutoDAO</h1>
+        <h1>Welcome to FeastDAO🍣🍕</h1>
         <div className="btn-hero">
           <ConnectWallet />
         </div>
