@@ -10,7 +10,7 @@ import sdk from "./1-initialize-sdk.js";
     await token.roles.grant("minter", vote.getAddress());
 
     console.log(
-      "Successfully gave vote contract permissions to act on token contract"
+      "✅ Successfully gave vote contract permissions to act on token contract"
     );
   } catch (error) {
     console.error(
