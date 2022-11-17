@@ -4,9 +4,9 @@ import { ethers } from "ethers";
 (async () => {
   try {
     // This is our governance contract.
-    const vote = await sdk.getContract("INSERT_VOTE_ADDRESS", "vote");
+    const vote = await sdk.getContract("0x7671AB44A1054a8df366955455f5122C8ba8626C", "vote");
     // This is our ERC-20 contract.
-    const token = await sdk.getContract("INSERT_TOKEN_ADDRESS", "token");
+    const token = await sdk.getContract("0x1769a5e502da569b33c440a7681be8308c77ed65", "token");
     // Create proposal to mint 420,000 new token to the treasury.
     const amount = 420_000;
     const description = "Should the DAO mint an additional " + amount + " tokens into the treasury?";
@@ -41,9 +41,9 @@ import { ethers } from "ethers";
 
   try {
     // This is our governance contract.
-    const vote = await sdk.getContract("INSERT_VOTE_ADDRESS", "vote");
+    const vote = await sdk.getContract("0x7671AB44A1054a8df366955455f5122C8ba8626C", "vote");
     // This is our ERC-20 contract.
-    const token = await sdk.getContract("INSERT_TOKEN_ADDRESS", "token");
+    const token = await sdk.getContract("0x1769a5e502da569b33c440a7681be8308c77ed65", "token");
     // Create proposal to transfer ourselves 6,900 tokens for being awesome.
     const amount = 6_900;
     const description = "Should the DAO transfer " + amount + " tokens from the treasury to " +
