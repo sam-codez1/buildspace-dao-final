@@ -27,7 +27,7 @@ const App = () => {
     'token',
   );
   const { contract: vote } = useContract(
-    'INSERT_VOTE_ADDRESS',
+    '0x7671AB44A1054a8df366955455f5122C8ba8626C',
     'vote',
   );
   // Hook to check if the user has our NFT

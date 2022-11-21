@@ -1,7 +1,7 @@
 import sdk from "./1-initialize-sdk.js";
 import { ethers } from "ethers";
 
-(async () => {
+(async () => { 
   try {
     // This is our governance contract.
     const vote = await sdk.getContract("0x7671AB44A1054a8df366955455f5122C8ba8626C", "vote");
