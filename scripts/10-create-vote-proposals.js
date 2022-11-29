@@ -8,7 +8,7 @@ import { ethers } from "ethers";
     // This is our ERC-20 contract.
     const token = await sdk.getContract("0x1769a5e502da569b33c440a7681be8308c77ed65", "token");
     // Create proposal to mint 420,000 new token to the treasury.
-    const amount = 420_000;
+    const amount = 500_000;
     const description = "Should the DAO mint an additional " + amount + " tokens into the treasury?";
     const executions = [
       {

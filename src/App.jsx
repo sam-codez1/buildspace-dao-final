@@ -23,7 +23,7 @@ const App = () => {
   );
   // Initialize our token contract
   const { contract: token } = useContract(
-    '0x4088a76755ed95fbF5E4A98B6a5F6096ba531F8B',
+    '0x1769a5e502dA569B33C440a7681be8308C77ED65',
     'token',
   );
   const { contract: vote } = useContract(
@@ -126,11 +126,11 @@ const App = () => {
 
     const getAllBalances = async () => {
       try {
-        const amounts = await token?.history.getAllHolderBalances();
+        const amounts = await token.history.getAllHolderBalances();
         setMemberTokenAmounts(amounts);
-        console.log('👜 Amounts', amounts);
+        console.log("👜 Amounts", amounts);
       } catch (error) {
-        console.error('failed to get member balances', error);
+        console.error("failed to get member balances", error);
       }
     };
     getAllBalances();
